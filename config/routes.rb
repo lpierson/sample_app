@@ -2,8 +2,23 @@ SampleApp::Application.routes.draw do
   get "pages/home"
 
   get "pages/contact"
+  
+  get "pages/about"
+  
+  
+  
+  #get "pages/create"
 
-  get "pages/create"
+  #get "pages/app/controllers/pages_controller.rb"
+
+  
+
+  #get "pages/route"
+
+  #get "pages/get"
+
+  
+  
 
   
 

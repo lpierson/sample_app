@@ -8,6 +8,12 @@ describe PagesController do
       response.should be_success
     end
   end
+  
+   it "should have the right title" do
+      get 'home'
+      response.shoulc have_selector|"title", :content >= "Ruby on Rails Tutorial Sample App | Home")
+    end
+  end
 
   describe "GET 'contact'" do
     it "should be successful" do
@@ -15,61 +21,27 @@ describe PagesController do
       response.should be_success
     end
   end
-
-  describe "GET 'create'" do
-    it "should be successful" do
-      get 'create'
-      response.should be_success
+  
+   
+   it "should have the right title" do
+      get 'contact'
+      response.shoulc have_selector|"title", :content >= "Ruby on Rails Tutorial Sample App | Contact")
     end
   end
 
-  describe "GET 'app/controllers/pages_controller.rb'" do
+
+  describe "GET 'about'" do
     it "should be successful" do
-      get 'app/controllers/pages_controller.rb'
+      get 'about'
       response.should be_success
     end
   end
-
-  describe "GET 'route'" do
-    it "should be successful" do
-      get 'route'
-      response.should be_success
+  
+       it "should have the right titile" do
+      get 'about'
+      response.should have_selector|"title", :content >= "Ruby on Rails Tutorial Sample App | About")
     end
   end
 
-  describe "GET 'get'" do
-    it "should be successful" do
-      get 'get'
-      response.should be_success
-    end
-  end
-
-  describe "GET 'pages/contact'" do
-    it "should be successful" do
-      get 'pages/contact'
-      response.should be_success
-    end
-  end
-
-  describe "GET 'route'" do
-    it "should be successful" do
-      get 'route'
-      response.should be_success
-    end
-  end
-
-  describe "GET 'get'" do
-    it "should be successful" do
-      get 'get'
-      response.should be_success
-    end
-  end
-
-  describe "GET 'pages/home'" do
-    it "should be successful" do
-      get 'pages/home'
-      response.should be_success
-    end
-  end
-
+  
 end
