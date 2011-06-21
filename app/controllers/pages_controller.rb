@@ -10,6 +10,10 @@ class PagesController < ApplicationController
   def about
   	@title = "About"
   end
+  
+  def help
+  	@title = "Help"
+  end  
 
   #def app/controllers/pages_controller.rb
   #end
@@ -29,7 +33,7 @@ class PagesController < ApplicationController
   #def get
   #end
 
-  #def pages/home
-  #end
+#def pages/home
+#end
 
 end
